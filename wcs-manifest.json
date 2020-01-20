@@ -1,0 +1,25 @@
+{
+  "title": "Weather Forecast",
+  "description": ".",
+  "descriptionAbstract": "Weather Forecast Webcomponent",
+  "license": "AGPL-3.0",
+  "repositoryUrl": "",
+  "authors": [
+    {
+      "name": "Belka",
+      "email": "hello@belkadigital.com",
+      "organization": "Belka",
+      "organizationUrl": "https://belkadigital.com/"
+    }
+  ],
+  "image": "wcs-logo.png",
+  "searchTags": ["weather"],
+  "dist": {
+    "basePath": "dist",
+    "files": ["weather_forecast_widget.js"]
+  },
+  "configuration": {
+    "tagName": "weather-forecast",
+    "options": []
+  }
+}
