@@ -2,3 +2,4 @@ diy/
 node_modules/
 dist/
 work/scripts/
+.vscode/
