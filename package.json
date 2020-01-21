@@ -1,7 +1,8 @@
 {
-  "name": "idm",
+  "name": "weather-forecast",
   "version": "1.0.0",
   "private": true,
+  "license": "AGPL-3.0",
   "dependencies": {
     "@glidejs/glide": "^3.2.4",
     "lit-element": "^2.2.1",
