@@ -1,7 +1,7 @@
 {
-  "title": "Weather Forecast",
-  "description": ".",
-  "descriptionAbstract": "Weather Forecast Webcomponent",
+  "title": "Weather in South Tyrol - forecast",
+  "description": "Weather forecast of some days",
+  "descriptionAbstract": "Weather forecast webcomponent",
   "license": "AGPL-3.0",
   "copyrightHolders": [
     {
