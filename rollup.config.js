@@ -1,9 +1,9 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonJS from 'rollup-plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import svg from 'rollup-plugin-svg';
-import string from 'rollup-plugin-string';
-import image from 'rollup-plugin-img';
+import { string } from 'rollup-plugin-string';
+import image from '@rollup/plugin-image';
 import cleanup from 'rollup-plugin-cleanup';
 
 export default {
@@ -16,12 +16,12 @@ export default {
     format: 'iife'
   },
   plugins: [
+    resolve(),
+    commonjs(),
     string({ include: '**/*.css' }),
     image({
       limit: 10000
     }),
-    commonJS(),
-    resolve(),
     svg(),
     process.env.NODE_ENV === 'production' &&
       terser({

@@ -7,15 +7,15 @@ import 'moment/locale/it';
 import 'moment/locale/nl';
 import 'moment/locale/ru';
 import { district_details_api_call } from './api';
-// import { rain_level_icons } from './components/rain_level_cons';
 import main from './styles/main.css';
 import style__placeholder_loading from './styles/placeholder-loading.css';
 import style__typography from './styles/typography.css';
+// import { rain_level_icons } from './components/rain_level_cons';
 // import { render__rain_number, render__rain_perc } from './utils';
 
 const WEATHER_ICON_SVG_PATH = `https://www.suedtirol.info/static/img/weatherIcons`;
 
-class MeteoForecast extends LitElement {
+class WeatherForecast extends LitElement {
   constructor() {
     super();
     this.language_translation = 'en';
@@ -76,8 +76,6 @@ class MeteoForecast extends LitElement {
   }
 }
 
-/* <img class="forecast__item__rain_icon" src="${rain_icon_path}" />  */
-
-if (!window.customElements.get('meteo-forecast-widget')) {
-  window.customElements.define('meteo-forecast-widget', MeteoForecast);
+if (!window.customElements.get('weather-forecast-widget')) {
+  window.customElements.define('weather-forecast-widget', WeatherForecast);
 }
