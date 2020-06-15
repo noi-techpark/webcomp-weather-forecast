@@ -2,7 +2,7 @@
   "title": "Weather in South Tyrol - forecast",
   "description": "Weather forecast of some days",
   "descriptionAbstract": "Weather forecast webcomponent",
-  "license": "AGPL-3.0",
+  "license": "AGPL-3.0-or-later",
   "copyrightHolders": [
     {
       "name": "IDM",
@@ -26,7 +26,7 @@
     "files": ["weather_forecast_widget.min.js"]
   },
   "configuration": {
-    "tagName": "meteo-forecast-widget",
+    "tagName": "weather-forecast-widget",
     "options": [
       {
         "key": "language_translation",
@@ -45,7 +45,7 @@
         "label": "Forecast days",
         "options": {
           "default": 4,
-          "min": 0,
+          "min": 1,
           "max": 4,
           "step": 1
         }
@@ -57,6 +57,8 @@
         "label": "District ID",
         "options": {
           "default": 1,
+          "min": 1,
+          "max": 7,
           "step": 1
         }
       }

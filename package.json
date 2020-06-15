@@ -22,6 +22,6 @@
   },
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
-    "watch": "NODE_ENV=development rollup --config rollup.config.js -w"
+    "start": "NODE_ENV=development rollup --config rollup.config.js -w"
   }
 }
