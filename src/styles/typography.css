@@ -4,16 +4,14 @@
   h3 {
     margin: 0 0 16px 0;
     color: #333;
-    font-family: 'Suedtirol', 'KievitWebPro', sans-serif;
+    font-family: var(--weather-forecast-widget-font-family, Suedtirol, KievitWebPro, sans-serif);
     margin-bottom: 0;
-    /* text-align: center; */
   }
 
   h1 {
     color: #80909c;
     font-size: 30px;
-    /* margin-bottom: 2rem; */
-    font-family: 'Suedtirol', 'KievitWebPro', sans-serif;
+    font-family: var(--weather-forecast-widget-font-family, Suedtirol, KievitWebPro, sans-serif);
   }
 
   p {
@@ -21,12 +19,6 @@
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* h1,
-  h2,
-  h3 {
-    margin: 0 0 16px 0;
-  } */
-
   h1 {
     font-size: 48px;
     font-weight: 500;
