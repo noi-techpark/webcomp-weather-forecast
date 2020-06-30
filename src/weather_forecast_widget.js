@@ -7,11 +7,10 @@ import 'moment/locale/it';
 import 'moment/locale/nl';
 import 'moment/locale/ru';
 import { district_details_api_call } from './api';
+import { API_BASE_PATH, API_TOKEN } from './constants';
 import main from './styles/main.css';
 import style__placeholder_loading from './styles/placeholder-loading.css';
 import style__typography from './styles/typography.css';
-// import { rain_level_icons } from './components/rain_level_cons';
-// import { render__rain_number, render__rain_perc } from './utils';
 
 const WEATHER_ICON_SVG_PATH = `https://www.suedtirol.info/static/img/weatherIcons`;
 
@@ -19,8 +18,8 @@ class WeatherForecast extends LitElement {
   constructor() {
     super();
     this.language_translation = 'en';
-    this.token = `iJ9gIQJ-LFaNT2m-R_dazqCf2XoXO8trlqZsgN6ENAMD9lrWsdKKxoOYkHdNQt9UAUJlMosEiF-njEUtoNwT3V6AtIt08bxrLa0DKLJYroj54I_C1kCPiWV69KR1IXUZj18av-nuofuYDzpE8jRYL02SI97jHEGWfnRLNOfLyEsp3pAp17rm-p6hst-t7Z0bYJkIqFvERMd4QHshaRvAb89EUPb_zEHj1JwgBUOwFIHf0e8Bm-1-nL8d9o9AIEGGDAIiJfvjGmNT-54vteKx1E_r7liUDuXfL0pctOpu5w5Mb_yBmnJsDGFjq7YHVL9dIqZzUvXnRXq1x4novqquK0jiEXRI3XxQN-qKuMpYQ8XqsXQWTjWqoGqgqbIGYpRXMcAUvO-6Y7SSKKvtMLvXGZjlC_IA0TMvF2r8JQbfluFk2XzKs7sqIu6OCxWT4Xxn8U2NWFtKXK4RkfXP9zOMP4FtTfz-X3kgwwgWuUnFvbufk9xRF8nNwqsxgwedNtnw0ouzarOI3zUFRg0dBKJse1z-_rGkF4QvTWwzGG17LPs`;
-    this.base_url = `https://tourism.opendatahub.bz.it/api/Weather`;
+    this.token = API_TOKEN;
+    this.base_url = API_BASE_PATH;
     this.district_details = {};
     this.is_loading = true;
     this.selected_district_id = 0;

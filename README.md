@@ -64,6 +64,22 @@ sh ./work/serve.sh
 
 You will see the components in action at [http://0.0.0.0:8000/](http://0.0.0.0:8000/) url.
 
+## Customizations
+
+### Use a custom font
+
+Using the `--weather-forecast-widget-font-family` css variable you can set a custom `font-family`.
+[link to MDN doc](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+```html
+<style>
+  weather-forecast-widget.en_widget {
+    --weather-forecast-widget-font-family: Metal Mania;
+  }
+</style>
+<weather-forecast-widget class="en_widget" forecast_days="4" selected_district_id="1" language_translation="en" ></weather-forecast-widget>
+```
+
 ### Dist folder in packages
 
 ## Deployment
