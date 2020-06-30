@@ -15,7 +15,7 @@ pipeline {
     }
 
     environment {
-        GIT_REPOSITORY = "git@github.com:noi-techpark/webcomp-generic-map.git"
+        GIT_REPOSITORY = "git@github.com:noi-techpark/webcomp-weather-forecast.git"
     }
 
     stages {
